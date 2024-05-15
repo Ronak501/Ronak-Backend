@@ -6,7 +6,7 @@ import connectDB from "./db/index.js";
 dotenv.config({
      path: "./env"
 })
-
+asdfrtiop[mk]
 connectDB()
 .then(() => {
      app.on("error", (error) => {
