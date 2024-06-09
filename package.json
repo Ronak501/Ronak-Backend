@@ -15,7 +15,7 @@
   "author": "Ronak",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.3",
     "prettier": "^3.2.5"
   },
   "dependencies": {
