@@ -291,7 +291,7 @@ import { jwt } from "jsonwebtoken";
     if(!avatar.url) {
         throw new ApiError(400, "Something went wrong while uploading avatar")
     }
-    
+
     const user = await User.findByIdAndUpdate(
         req.user?._id,
         {
