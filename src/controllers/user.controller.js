@@ -3,7 +3,7 @@ import {ApiError} from "../utils/ApiError.js";
 import { User } from "../models/user.model.js";
 import {uploadOnCloudinary} from "../utils/cloudinary.js";
 import {ApiResponse} from "../utils/ApiResponse.js";
-import { jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
  const generateAccessAndRefereshTokens = async(userId) =>{
      try {
@@ -256,7 +256,7 @@ import { jwt } from "jsonwebtoken";
     .json(new ApiResponse(200, {user}, "User fetched successfully"))
  })
 
- const updateAcctountDetails = asyncHandler(async(req, res) => {
+ const updateAccountDetails = asyncHandler(async(req, res) => {
     const {fullName, email} = req.body
 
     if (!fullName || !email) {
@@ -467,7 +467,8 @@ export {
     changeCurrentPassword,
     getCurrentUser,
     updateUserAvatar,
-    updateAcctountDetails,
+    updateAccountDetails,
+    updateUserCoverImage,
     getUserChannelProfile,
     getWatchHistory
 }  
